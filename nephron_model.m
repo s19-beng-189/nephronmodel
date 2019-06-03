@@ -5,6 +5,7 @@ global C0 Fna Q1_0 alpha C_star L;
 x=0:0.1:L;
 
 C1=conc1(x);
+<<<<<<< HEAD
 figure(1)
 plot(x,C1);
 xlabel('x (mm)','FontSize',16); ylabel('[Na]','FontSize',16); title('Descending Loop of Henle Concentration','FontSize',16)
@@ -13,28 +14,20 @@ C2=Conc2(x,L);
 figure(2)
 plot(x,C2);
 xlabel('x (mm)','FontSize',16); ylabel('[Na]','FontSize',16); title('Ascending Loop of Henle Concentration','FontSize',16)
+=======
+C2=Conc2(x,L);
+>>>>>>> ddaac14176efb4bec2eea82e0823e11f343295ac
 
-figure(3)
+figure(1)
 plot([C1 flip(C2)])
 ylabel('[Na]','FontSize',16); title('Concentration Through Loop of Henle','FontSize',16);
-xticks([]);
+xticks([0 101 202]);
+xticklabels({'0','L','0'});
 
 fH20=Fna./C1;
 figure(4)
 plot(x,C1);
 xlabel('x (mm)','FontSize',16); ylabel('Flux (L/(min*mm))','FontSize',16); title('Descending Loop of Henle Water Flux','FontSize',16)
-
-%note that these graphs assume ADH is NOT present
-Q2=Q1_0*exp(-alpha);
-t=0:0.1:10;
-figure(5)
-plot(t,Q2.*t);
-xlabel('Minutes','FontSize',16); ylabel('Urine Volume (L)','FontSize',16); title('Urine Volume Output Over Time','FontSize',16)
-
-figure(6)
-C_urine=Conc2(0);
-plot(t,Q2.*t*C_urine);
-xlabel('Minutes','FontSize',16); ylabel('Na excreted (mol)','FontSize',16); title('Sodium Output Over Time','FontSize',16)
 
 %% With Juxtaglomerular Feedback
 close all;
