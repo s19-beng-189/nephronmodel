@@ -1,5 +1,5 @@
 %% With Varying Nephron Lengths
-
+global L Fna Q1_0 C0
 for L = 1:5                %vary nephron lengths of individual nephrons (mm)
     Q1_0 = Fna*L/C0;        %find initial flow     
     Q2 = Fna*L/(exp(1)*C0); %find final flow

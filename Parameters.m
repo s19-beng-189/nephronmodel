@@ -1,5 +1,5 @@
 %% Parameters 
-
+global alpha L Fna Q1_0 C0
 %notes! no idea if these values are realistic haha i just put something to
 %test the scripts
 
