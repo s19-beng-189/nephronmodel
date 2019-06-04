@@ -10,3 +10,6 @@ C_star = 50; %desired urine concentration for feedback mechanism
 
 alpha = Fna*L/(Q1_0*C0);
 alpha_check=(alpha<=1) %returns true if alpha is less than or equal to 1
+if alpha_check==0
+    disp(['STOP! Alpha is greater than 1; try again.']);
+end
