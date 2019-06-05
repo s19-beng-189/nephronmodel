@@ -1,10 +1,10 @@
 %% Parameters 
 
-%note: values are NOT realistic and units are arbitrary
+%note: values are estimated and possibly not super realistic
 
-Fna = 2.700e-05; %sodium flux in mmol/(L*cm)
+Fna = 8.9100e-06; %sodium flux in mmol/(L*cm)
 C0 = 300; %c(0) in mmOsm (mmol/L)
-Q1_0 = 5.0000e-07; %Q1(0) in L/min
+Q1_0 = 1.6500e-07; %Q1(0) in L/min
 L = 5; %nephron length in cm
 C_star = 100; %desired urine concentration for feedback mechanism
 
