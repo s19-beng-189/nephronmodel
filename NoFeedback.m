@@ -15,7 +15,7 @@ xticklabels({'0','L','0'});
 
 fH20=Fna./C1;
 figure(4)
-plot(x,C1);
+plot(x,fH20);
 xlabel('X (cm)','FontSize',16); ylabel('Flux (mmol/L/cm)','FontSize',16); title('Descending Loop of Henle Water Flux','FontSize',16)
 
 urine_C=Conc2(0) %ending urine concentration
